@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a3ebb848a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="A_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <br><span>Anushka Singh</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!----------About---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="me1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>To obtain a position that will demand the best of my professional ability in terms of technical and analytical 
+                        skills and provides me the opportunity to reach my full potential professionally and personally utilizing my 
+                        abilities</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('interests')">Interests</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul class="list1">
+                            <li><span>B.Tech in Computer Science and Engineering(Data Science)</span>
+                                <ul class="list2">
+                                    <li>Pranveer Singh Institute of Technology, Kanpur</li>
+                                    <li>2020 - Present</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><span>Intermediate - CBSE</span>
+                                <ul class="list2">
+                                    <li>Dr. Virendra Swarup Education Centre, Kanpur</li>
+                                    <li>2019 - 2020</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li><span>High School - CBSE</span>
+                                <ul class="list2">
+                                    <li>Dr. Virendra Swarup Education Centre, Kanpur</li>
+                                    <li>2017 - 2018</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul class="list1">
+                            <li>Python</li>
+                            <li>Javascript</li>
+                            <li>SQL</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>C</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Analytical Skills</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="interests">
+                        <ul class="list1">
+                            <li>Coding</li>
+                            <li>Machine Learning</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Certificates---------------------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p>Python is a general-purpose, dynamic, high-level, and interpreted programming language.It supports Object 
+                        Oriented programming approach to develop applications.It is a simple, easy, powerful and versatile scripting 
+                        language, which makes it attractive for application development.</p>
+                    <a href="https://olympus.mygreatlearning.com/courses/12682/certificate">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>Structured Query Language (SQL)  is a domain-specific language used in programming and designed for managing data 
+                        held in a relational database management system (RDBMS), or for stream processing in a relational data stream 
+                        management system (RDSMS).</p>
+                    <a href="https://www.hackerrank.com/certificates/03b3fb9ff5d0">View Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web 
+                        design, web publishing, web programming, and database management.It is the creation of an application that 
+                        works over the internet i.e. websites.</p>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/RXS84A8UA559">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------Projects----------------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="drowsiness.png">
+                    <div class="layer">
+                        <h3>Driver Drowsines Detection System</h3>
+                        <p>A Machine learning project which uses SVM and captures image continuously and measures the state of eye according to the
+                            specified algorithm and gives a warning if required.</p>
+                        <a href="https://github.com/anushkasingh-29/Driver-Drowsiness-Detection/blob/main/Mini_project2022.ipynb"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="portfolio.jpg">
+                    <div class="layer">
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>Created a responsive portfolio website which shows my skills, projects, certifications and also has the 
+                            option of downloading my resume using HTML, CSS and JavaScript.</p>
+                        <a href="https://github.com/anushkasingh-29/Responsive-Portfolio-Website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="61MuSYQ7yhL._AC_UF894,1000_QL80_.jpg">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>Made a digital clock using HTML, CSS and JavaScript.</p>
+                        <a href="https://anushkasingh-29.github.io/Digital-Clock/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/anushkasingh-29?tab=repositories" class="btn">See More Projects</a>
+        </div>
+    </div>
+
+    <!---------------Contact----------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>anushkaz0411@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>8*********</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/_anu.shhkaa/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anushka-singh-23a489227"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/anushkasingh-29"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="ANUSHKA SINGH.pdf" class="btn btn2" download="">Download Resume</a>
+                </div>
+                <div  id ="resume" class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Thank you <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyv-R8CSCWE21FyhRyHskwfQNumoTWWy3ROgqE_kN6cseo_TclXCPwngpqkQLu8yztaNA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</html>
